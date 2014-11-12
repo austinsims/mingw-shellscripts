@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Read in a list of URLs, fetch them, and print a tab-delimted list of how long
+# it took along with the URL itself.
+
 printf "t\tURL\n"
 while read line; do
     URL=$(echo "$line" | tr '\n' ' ')
